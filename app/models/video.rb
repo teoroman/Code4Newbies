@@ -1,7 +1,7 @@
 class Video < ActiveRecord::Base
     def next
 		Video.where("id > ?", id).first
-	end
+	   end
 
 	def prev
 		Video.where("id < ?", id).last
